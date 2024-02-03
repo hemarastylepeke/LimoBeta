@@ -12,13 +12,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ho=d$k1^ml1uw9@g&9h+5r^ja)59ae#ccznb=rj89v0ch=h(6@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Application definition
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-SECURE_SSL_REDIRECT = True
+# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+# SECURE_SSL_REDIRECT = True
 
-ALLOWED_HOSTS = ['limotrack.up.railway.app']
+ALLOWED_HOSTS = ['limotrack.up.railway.app', '127.0.0.1' ]
 
 # Handle static file in production using whitenoise.
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
