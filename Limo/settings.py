@@ -18,7 +18,7 @@ DEBUG = False
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SECURE_SSL_REDIRECT = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['limotrack.up.railway.app']
 
 # Handle static file in production using whitenoise.
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
@@ -135,4 +135,4 @@ INTERNAL_IPS = [
 ]
 NPM_BIN_PATH = '/usr/bin/npm'
 
-CSRF_TRUSTED_ORIGINS = ["https://web-production-e0eb.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS = ["https://limotrack.up.railway.app/"]
